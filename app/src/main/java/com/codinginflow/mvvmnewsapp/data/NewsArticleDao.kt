@@ -1,10 +1,12 @@
 package com.codinginflow.mvvmnewsapp.data
 
+import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import kotlinx.coroutines.flow.Flow
 
+@Dao
 interface NewsArticleDao {
 
     @Query("SELECT * FROM breaking_news INNER JOIN news_articles ON articleUrl = url")
