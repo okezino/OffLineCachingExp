@@ -1,6 +1,6 @@
 # MVVM Caching Course
 
-This is the source code of the **MVVM Caching Course** created by Florian Walther (Coding in Flow) and Gabor Varadi (Zhuinden/EpicPandaForce). 
+This is the source code of the **MVVM Caching Course** created by Florian Walther (Coding in Flow) and Gabor Varadi (Zhuinden/EpicPandaForce) modified my Joseph Okeh. 
 
 **Find out more here: https://www.codinginflow.com/caching**
 
