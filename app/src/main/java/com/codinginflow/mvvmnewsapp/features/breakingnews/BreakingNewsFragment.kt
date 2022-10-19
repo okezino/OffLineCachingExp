@@ -37,7 +37,7 @@ class BreakingNewsFragment : Fragment(R.layout.fragment_breaking_news) {
              */
             viewLifecycleOwner.lifecycleScope.launchWhenStarted {
                 viewModel.breakingNews.collect {
-                  val result = it ?: return@collect
+                    val result = it ?: return@collect
                     swipeRefreshLayout.isRefreshing = result is Resource.Loading
                     recyclerView.isVisible = !result.data.isNullOrEmpty()
                     textViewError.isVisible = result.error != null && result.data.isNullOrEmpty()

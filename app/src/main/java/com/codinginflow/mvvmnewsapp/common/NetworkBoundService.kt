@@ -49,7 +49,7 @@ inline fun <RequestType, ResultType> networkBoundResource(
                 // Start emitting the new saved data
                 query().collect { send(Resource.Success(it)) }
 
-            }catch (e : Throwable){
+            } catch (e: Throwable) {
                 // cancel initial loading emission
                 loading.cancel()
                 // emit error message to the receiver
@@ -57,7 +57,7 @@ inline fun <RequestType, ResultType> networkBoundResource(
 
             }
 
-        }else {
+        } else {
             query().collect { send(Resource.Success(it)) }
         }
 
